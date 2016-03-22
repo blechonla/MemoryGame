@@ -1,0 +1,70 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string curFileMeme = @"C:\Users\BenjaminEOverton\Downloads\documents-export-2016-03-21\meme.jpg";
+            MessageBox.Show(File.Exists(curFileMeme) ? "File meme.jpg exists." : "File meme.jpg does not exist.");
+            string curFileWow = @"C:\Users\BenjaminEOverton\Downloads\documents-export-2016-03-21\wow.jpg";
+            MessageBox.Show(File.Exists(curFileWow) ? "File exists." : "File does not exist.");
+            string curFileShrek = @"C:\Users\BenjaminEOverton\Downloads\documents-export-2016-03-21\Shrek.jpg";
+            MessageBox.Show(File.Exists(curFileShrek) ? "File exists." : "File does not exist.");
+            string curFilePepes = @"C:\Users\BenjaminEOverton\Downloads\documents-export-2016-03-21\pepes.jpg";
+            MessageBox.Show(File.Exists(curFilePepes) ? "File exists." : "File does not exist.");
+            string curFileKyle = @"C:\Users\BenjaminEOverton\Downloads\documents-export-2016-03-21\Kyle.jpg";
+            MessageBox.Show(File.Exists(curFileKyle) ? "File exists." : "File does not exist.");
+            string curFile = @"C:\Users\BenjaminEOverton\Downloads\documents-export-2016-03-21\illuminati.jpg";
+            MessageBox.Show(File.Exists(curFile) ? "File exists." : "File does not exist.");
+            string curFileT = @"C:\Users\BenjaminEOverton\Downloads\documents-export-2016-03-21\mr.-t.jpg";
+            MessageBox.Show(File.Exists(curFileT) ? "File exists." : "File does not exist.");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
