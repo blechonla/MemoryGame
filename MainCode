@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1
+namespace MemoryGame
 {
     public partial class Form1 : Form
     {
@@ -20,6 +20,27 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            var bmp1 = new Bitmap(MemoryGame.Properties.Resources.Kyle);
+            var bmp2 = new Bitmap(MemoryGame.Properties.Resources.illuminati);
+            var bmp3 = new Bitmap(MemoryGame.Properties.Resources.meme);
+            var bmp4 = new Bitmap(MemoryGame.Properties.Resources.mr__t);
+            var bmp5 = new Bitmap(MemoryGame.Properties.Resources.pepes);
+            var bmp6 = new Bitmap(MemoryGame.Properties.Resources.download);
+            var bmp7 = new Bitmap(MemoryGame.Properties.Resources.Shrek);
+            var bmp8 = new Bitmap(MemoryGame.Properties.Resources.wow);
+            var bmp9 = new Bitmap(MemoryGame.Properties.Resources.CardBack);
+            Random r = new Random();
+            MessageBox.Show("" + r.ToString());
+
+            int num1 = r.Next(1, 9);
+            int num2 = r.Next(1, 9);
+            for (int i = 1; i < 9; i++)
+            {
+                
+            }
+
+
+
             string curFileMeme = @"C:\Users\BenjaminEOverton\Downloads\documents-export-2016-03-21\meme.jpg";
             MessageBox.Show(File.Exists(curFileMeme) ? "File meme.jpg exists." : "File meme.jpg does not exist.");
             string curFileWow = @"C:\Users\BenjaminEOverton\Downloads\documents-export-2016-03-21\wow.jpg";
@@ -38,22 +59,10 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var bmp1 = new Bitmap(WindowsFormsApplication1.Properties.Resources.Kyle);
-            var bmp2= new Bitmap(WindowsFormsApplication1.Properties.Resources.illuminati);
-            var bmp3 = new Bitmap(WindowsFormsApplication1.Properties.Resources.meme);
-            var bmp4 = new Bitmap(WindowsFormsApplication1.Properties.Resources.mr__t);
-            var bmp5 = new Bitmap(WindowsFormsApplication1.Properties.Resources.pepes);
-            var bmp6 = new Bitmap(WindowsFormsApplication1.Properties.Resources.Sceletor);
-            var bmp7 = new Bitmap(WindowsFormsApplication1.Properties.Resources.Shrek);
-            var bmp8 = new Bitmap(WindowsFormsApplication1.Properties.Resources.wow);
-            Random r = new Random();
-            pictureBox1.Image = bmp1;
-            MessageBox.Show(""+ r.ToString() );
-
             
-            //Random random2 = new Random();
-          //  pictureBox1.ImageLocation = paths[random.Next(0, bmp.Count - 1)];
         }
+
+
 
         private void pictureBox10_Click(object sender, EventArgs e)
         {
@@ -77,6 +86,16 @@ namespace WindowsFormsApplication1
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox13_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
 
         }
