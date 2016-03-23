@@ -38,7 +38,21 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var bmp1 = new Bitmap(WindowsFormsApplication1.Properties.Resources.Kyle);
+            var bmp2= new Bitmap(WindowsFormsApplication1.Properties.Resources.illuminati);
+            var bmp3 = new Bitmap(WindowsFormsApplication1.Properties.Resources.meme);
+            var bmp4 = new Bitmap(WindowsFormsApplication1.Properties.Resources.mr__t);
+            var bmp5 = new Bitmap(WindowsFormsApplication1.Properties.Resources.pepes);
+            var bmp6 = new Bitmap(WindowsFormsApplication1.Properties.Resources.Sceletor);
+            var bmp7 = new Bitmap(WindowsFormsApplication1.Properties.Resources.Shrek);
+            var bmp8 = new Bitmap(WindowsFormsApplication1.Properties.Resources.wow);
+            Random r = new Random();
+            pictureBox1.Image = bmp1;
+            MessageBox.Show(""+ r.ToString() );
 
+            
+            //Random random2 = new Random();
+          //  pictureBox1.ImageLocation = paths[random.Next(0, bmp.Count - 1)];
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
