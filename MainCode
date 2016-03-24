@@ -59,14 +59,9 @@ namespace WindowsFormsApplication1
             pictureBox8.BackgroundImage = bmp;
             pictureBox9.BackgroundImage = bmp;
             pictureBox10.BackgroundImage = bmp;
-            pictureBox10.BackgroundImage = bmp;
             pictureBox11.BackgroundImage = bmp;
             pictureBox11.BackgroundImage = bmp;
-            pictureBox13.BackgroundImage = bmp;
             pictureBox12.BackgroundImage = bmp;
-            pictureBox15.BackgroundImage = bmp;
-            pictureBox16.BackgroundImage = bmp;
-            pictureBox14.BackgroundImage = bmp;
             pictureBox13.BackgroundImage = bmp;
             pictureBox14.BackgroundImage = bmp;
             pictureBox15.BackgroundImage = bmp;
