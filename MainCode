@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
+
     public partial class Form1 : Form
     {
         public Form1()
@@ -38,6 +39,7 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var bmp = new Bitmap(WindowsFormsApplication1.Properties.Resources.Card_Back);
             var bmp1 = new Bitmap(WindowsFormsApplication1.Properties.Resources.Kyle);
             var bmp2= new Bitmap(WindowsFormsApplication1.Properties.Resources.illuminati);
             var bmp3 = new Bitmap(WindowsFormsApplication1.Properties.Resources.meme);
@@ -46,13 +48,37 @@ namespace WindowsFormsApplication1
             var bmp6 = new Bitmap(WindowsFormsApplication1.Properties.Resources.Sceletor);
             var bmp7 = new Bitmap(WindowsFormsApplication1.Properties.Resources.Shrek);
             var bmp8 = new Bitmap(WindowsFormsApplication1.Properties.Resources.wow);
+
+            pictureBox1.BackgroundImage = bmp;
+            pictureBox2.BackgroundImage = bmp;
+            pictureBox3.BackgroundImage = bmp;
+            pictureBox4.BackgroundImage = bmp;
+            pictureBox5.BackgroundImage = bmp;
+            pictureBox6.BackgroundImage = bmp;
+            pictureBox7.BackgroundImage = bmp;
+            pictureBox8.BackgroundImage = bmp;
+            pictureBox9.BackgroundImage = bmp;
+            pictureBox10.BackgroundImage = bmp;
+            pictureBox10.BackgroundImage = bmp;
+            pictureBox11.BackgroundImage = bmp;
+            pictureBox11.BackgroundImage = bmp;
+            pictureBox13.BackgroundImage = bmp;
+            pictureBox12.BackgroundImage = bmp;
+            pictureBox15.BackgroundImage = bmp;
+            pictureBox16.BackgroundImage = bmp;
+            pictureBox14.BackgroundImage = bmp;
+            pictureBox13.BackgroundImage = bmp;
+            pictureBox14.BackgroundImage = bmp;
+            pictureBox15.BackgroundImage = bmp;
+            pictureBox16.BackgroundImage = bmp;
+           
+         
             Random r = new Random();
-            pictureBox1.Image = bmp1;
-            MessageBox.Show(""+ r.ToString() );
+           // pictureBox1.Image = bmp1;
+           // MessageBox.Show(""+ r.ToString() );
 
             
-            //Random random2 = new Random();
-          //  pictureBox1.ImageLocation = paths[random.Next(0, bmp.Count - 1)];
+          
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
@@ -78,7 +104,25 @@ namespace WindowsFormsApplication1
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+           
+            var bmp2 = new Bitmap(WindowsFormsApplication1.Properties.Resources.illuminati);
+            var bmp3 = new Bitmap(WindowsFormsApplication1.Properties.Resources.meme);
+            var bmp4 = new Bitmap(WindowsFormsApplication1.Properties.Resources.mr__t);
+            var bmp5 = new Bitmap(WindowsFormsApplication1.Properties.Resources.pepes);
+            var bmp6 = new Bitmap(WindowsFormsApplication1.Properties.Resources.Sceletor);
+            var bmp7 = new Bitmap(WindowsFormsApplication1.Properties.Resources.Shrek);
+            var bmp8 = new Bitmap(WindowsFormsApplication1.Properties.Resources.wow);
 
+            //if (pictureBox1.Image == WindowsFormsApplication1.Properties.Resources.wow)
+            //pictureBox1.Image = WindowsFormsApplication1.Properties.Resources.Kyle;
+            //else
+            //pictureBox1.Image = WindowsFormsApplication1.Properties.Resources.wow;
+
+
+            if (pictureBox1.BackColor == Color.Teal)
+                pictureBox1.BackColor = Color.Orange;
+            else
+                pictureBox1.BackColor = Color.Teal;
         }
     }
 }
